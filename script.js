@@ -1,5 +1,5 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
-let attempts = 10;
+let attempts = 7;
 
 function checkGuess() {
   attempts--;
@@ -30,7 +30,7 @@ function checkGuess() {
 
 function resetGame() {
   randomNumber = Math.floor(Math.random() * 100) + 1;
-  attempts = 10;
+  attempts = 7;
   document.getElementById("guess").value = '';
   document.getElementById("feedback").innerHTML = 'Ayo coba lagi, siapa tau sekarang otak lu nyala.';
 }
