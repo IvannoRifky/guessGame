@@ -9,21 +9,21 @@ function checkGuess() {
   while (attempts > 0) {
     if (guess == randomNumber) {
       attempts = 0;
-      feedbackElement.innerHTML = "Congratulations!";
+      feedbackElement.innerHTML = "Mumpung lu pinter kontol!";
       feedbackElement.style.color = "green";
       break;
     } else if (guess < randomNumber) {
-      feedbackElement.innerHTML = `Too low! Try again. ${attempts} attempts remaining.`;
+      feedbackElement.innerHTML = `Kurang tinggi tolol, kek tinggi badan lu! Noh nyawa lu ngurang bangsat jadi tinggal ${attempts}`;
       feedbackElement.style.color = "red";
       break;
     } else {
-      feedbackElement.innerHTML = `Too high! Try again. ${attempts} attempts remaining.`;
+      feedbackElement.innerHTML = `Ketinggian kek harapan lu dapetin dia! Noh nyawa lu ngurang bangsat jadi tinggal ${attempts}`;
       feedbackElement.style.color = "red";
       break;
     }
   }
   if (attempts === 0 && guess != randomNumber) {
-    feedbackElement.innerHTML = `Sorry, you're out of attempts! The correct number was ${randomNumber}.`;
+    feedbackElement.innerHTML = `Kalau bawaan nya emang idiot emang susah. Noh gw spill jawabannya ${randomNumber}.`;
     feedbackElement.style.color = "red";
   }
 }
