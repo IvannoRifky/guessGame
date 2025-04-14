@@ -27,3 +27,10 @@ function checkGuess() {
     feedbackElement.style.color = "red";
   }
 }
+
+function resetGame() {
+  randomNumber = Math.floor(Math.random() * 100) + 1;
+  attempts = 10;
+  document.getElementById("guess").value = '';
+  document.getElementById("feedback").innerHTML = '';
+}
